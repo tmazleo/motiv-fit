@@ -4,6 +4,7 @@ import { View, Text, Button, TouchableOpacity } from 'react-native';
 import styles from './style';
 import LogoMin from '../../components/Logo/LogoMin';
 import Cha from '../../components/Cha';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 const ChatRoom = ({ navigation }) => {
@@ -17,7 +18,7 @@ const ChatRoom = ({ navigation }) => {
             <View style={styles.context}>
                 <View style={styles.message}>
                     <Text style={styles.text}>Após sua atividade, tire uma foto
-                        e mande com a seguinte pose: </Text>
+                        e mande com a seguinte pose: <Icon name="thumbs-up" size={20} color="yellow" /></Text>
                 </View>
                 <Cha />
             </View>
